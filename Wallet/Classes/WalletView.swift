@@ -272,12 +272,12 @@ open class WalletView: UIView {
     
     // MARK: Private methods
     
-    private let observerContext = UnsafeMutableRawPointer.allocate(bytes: 4, alignedTo: 1)
+    private let observerContext = UnsafeMutableRawPointer.allocate(byteCount: 4, alignment: 1)
     
     deinit {
         scrollView.removeObserver(self, forKeyPath: #keyPath(UIScrollView.frame))
         scrollView.removeObserver(self, forKeyPath: #keyPath(UIScrollView.bounds))
-        observerContext.deallocate(bytes: 4, alignedTo: 1)
+        observerContext.deallocate()
     }
     
     
@@ -552,7 +552,7 @@ open class WalletView: UIView {
     }
     
     func layoutWalletView(animationDuration: TimeInterval? = nil,
-                          animationOptions: UIViewKeyframeAnimationOptions = [.beginFromCurrentState, .calculationModeCubic],
+                          animationOptions: UIView.KeyframeAnimationOptions = [.beginFromCurrentState, .calculationModeCubic],
                           placeVisibleCardViews: Bool = true,
                           completion: LayoutCompletion? = nil) {
         
@@ -614,7 +614,7 @@ open class WalletView: UIView {
             let scrollViewContentOffsetY = scrollView.contentOffset.y
             
             if negativeScrollViewContentInsetTop > scrollViewContentOffsetY {
-                return fabs(fabs(negativeScrollViewContentInsetTop) + scrollViewContentOffsetY)
+                return abs(abs(negativeScrollViewContentInsetTop) + scrollViewContentOffsetY)
             }
             
             return nil

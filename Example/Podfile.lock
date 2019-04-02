@@ -1,22 +1,16 @@
 PODS:
-  - DynamicColor (3.1.0)
-  - RandomColorSwift (1.0.0)
-  - Wallet (1.1)
+  - Wallet (1.4.1)
 
 DEPENDENCIES:
-  - DynamicColor
-  - RandomColorSwift
   - Wallet (from `../`)
 
 EXTERNAL SOURCES:
   Wallet:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DynamicColor: 4dec283a881f7f9d9f3bc88fb5f306724242575f
-  RandomColorSwift: 9f85058b721665d52d239ca166a913e083506444
-  Wallet: b8b89d2e620420ddc91153ea0b0e0da8ce584429
+  Wallet: 5d21c3630319e87b2c580b67cefd4d5407f95dcd
 
-PODFILE CHECKSUM: be3acd44b5ef62b82609e6b234f13e598eceb037
+PODFILE CHECKSUM: 2635d852a4b3edfca63e2a916c1b18f3d6f5b7a0
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3

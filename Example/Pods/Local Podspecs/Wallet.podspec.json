@@ -1,8 +1,8 @@
 {
   "name": "Wallet",
-  "version": "1.1",
-  "summary": "Cards and passes collection view.",
-  "description": "Wallet is a replica of Apple's Wallet. Add, delete or present your cards and passes just like in Wallet.",
+  "version": "1.4.1",
+  "summary": "Wallet is a library to manage cards and passes.",
+  "description": "Wallet is a replica of the Apple's Wallet interface. Add, delete or present your cards and passes.",
   "homepage": "https://github.com/rshevchuk/Wallet",
   "license": {
     "type": "MIT",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/rshevchuk/Wallet.git",
-    "tag": "1.1"
+    "tag": "1.4.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Wallet/Classes/**/*"
+  "source_files": "Wallet/Classes/**/*",
+  "swift_version": "4.2"
 }

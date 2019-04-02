@@ -2,16 +2,14 @@
 import UIKit
 import Wallet
 
-import RandomColorSwift
-import DynamicColor
 
 class ColoredCardView: CardView {
 
     @IBOutlet weak var contentView: UIView!
     
-    let presentedCardViewColor:          UIColor = randomColor(hue: .random, luminosity: .dark).lighter()
+    let presentedCardViewColor:          UIColor = .red
     
-    lazy var depresentedCardViewColor:   UIColor = { return self.presentedCardViewColor.lighter() }()
+    lazy var depresentedCardViewColor:   UIColor = { return .green }()
     
     @IBOutlet weak var indexLabel: UILabel!
     var index: Int = 0 {

@@ -23,6 +23,7 @@ Wallet is a replica of the Apple's Wallet interface. Add, delete or present your
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Wallet/Classes/**/*'
+  s.swift_version = '4.2'
 
   # s.resource_bundles = {
   #   'Wallet' => ['Wallet/Assets/*.png']
